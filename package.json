@@ -1,0 +1,66 @@
+{
+  "name": "rupee-words",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Zero-dependency, ultra-fast Indian Rupee & numbering system converter for GST invoices, cheques, and financial applications.",
+  "author": "Vijay Misal <misalvijay153@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/vjymisal0/rupee-words#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjymisal0/rupee-words.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vjymisal0/rupee-words/issues"
+  },
+  "keywords": [
+    "rupee",
+    "rupee-words",
+    "indian-currency",
+    "lakhs",
+    "crores",
+    "invoicing",
+    "gst-invoice",
+    "fintech-india",
+    "number-to-words"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.7",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
