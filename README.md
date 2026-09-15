@@ -1,6 +1,7 @@
 # rupee-words
 
 [![npm version](https://img.shields.io/npm/v/rupee-words.svg?color=cb3837&style=flat-square)](https://www.npmjs.com/package/rupee-words)
+[![CI](https://github.com/vjymisal0/rupee-words/actions/workflows/ci.yml/badge.svg)](https://github.com/vjymisal0/rupee-words/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/rupee-words?color=success&style=flat-square)](https://bundlephobia.com/package/rupee-words)
 [![types](https://img.shields.io/badge/types-TypeScript-blue.svg?style=flat-square)](https://www.typescriptlang.org/)
