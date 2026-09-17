@@ -275,3 +275,11 @@ Feel free to check [issues page](https://github.com/vjymisal0/rupee-words/issues
 ## 📄 License
 
 Distributed under the [MIT License](./LICENSE). Copyright (c) 2026 Vijay Misal.
+
+## API
+
+The primary API converts numeric amounts to Indian numbering-system words, including lakhs and crores. See the exported TypeScript declarations for the complete signature.
+
+## Limitations
+
+This package formats values locally; it does not perform currency conversion, tax calculation, or financial validation.
