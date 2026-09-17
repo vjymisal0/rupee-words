@@ -1,6 +1,6 @@
 {
   "name": "rupee-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Zero-dependency, ultra-fast Indian Rupee & numbering system converter for GST invoices, cheques, and financial applications.",
   "author": "Vijay Misal <misalvijay153@gmail.com>",
@@ -43,7 +43,8 @@
   "files": [
     "dist",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "sideEffects": false,
   "scripts": {
