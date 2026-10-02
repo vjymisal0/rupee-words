@@ -1,6 +1,6 @@
 {
   "name": "rupee-words",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "type": "module",
   "description": "Zero-dependency, ultra-fast Indian Rupee & numbering system converter for GST invoices, cheques, and financial applications.",
   "author": "Vijay Misal <misalvijay153@gmail.com>",
@@ -53,15 +53,22 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+    "prepublishOnly": "npm run typecheck && npm run build && npm test"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^3.2.7",
-    "tsup": "^8.4.0",
-    "typescript": "^5.7.3",
-    "vitest": "^3.0.7"
+    "@vitest/coverage-v8": "^5.0.3",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.3",
+    "@types/node": "^26.6.4"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20"
+  },
+  "overrides": {
+    "esbuild": "^0.28.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
